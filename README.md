@@ -48,5 +48,5 @@ Easy light weight way of creating and sharing graphs. Pastebin for graphs.
 
 > **Initial Release**
 >
-> Feature set: User models, oauth registration, rest framework
+> Feature set: Graph model, file upload, linkable graph, admin interface
 

@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphs',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,8 +59,10 @@ WSGI_APPLICATION = 'graph_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'graph_django',                      
+        'USER': 'temp',
+        'PASSWORD': 'password',
     }
 }
 
@@ -81,3 +84,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ENV_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+MEDIA_ROOT = os.path.join(ENV_PATH, 'media/')
+
+
+
