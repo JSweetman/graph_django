@@ -3,7 +3,7 @@ CSV Graphing
 
 ## Why?
 
-Easy light weight way of creating and sharing graphs. Pastebin for graphs.
+Wanted to play with Django's file upload and use d3.js to create graphs
 
 ## Installation and Usage
 
