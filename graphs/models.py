@@ -11,7 +11,7 @@ class Graph(models.Model):
 		('hist', 'Histogram'))
 
 	title = models.CharField(max_length=30)
-	graph_type = models.CharField("Type: ", max_length=10, choices=GRAPH_TYPES)
+	graph_type = models.CharField("Type", max_length=10, choices=GRAPH_TYPES)
 	csv_file = models.FileField(upload_to=get_upload_file_name)
 	created_at = models.DateTimeField(auto_now_add=True)
 
