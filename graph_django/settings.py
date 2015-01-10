@@ -65,7 +65,6 @@ DATABASES = {
         'PASSWORD': 'password',
     }
 }
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
@@ -96,6 +95,8 @@ TEMPLATE_DIRS = (
 ENV_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 MEDIA_ROOT = os.path.join(ENV_PATH, 'media/')
+
+APPEND_SLASH = True
 
 
 
